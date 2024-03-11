@@ -23,7 +23,7 @@ const FormFrontend = () => {
   
     axios({
       method: 'post',
-      url: 'process.env.FRONTEND_URL  + '/api/v1/form/send',
+      url: 'process.env.BACKEND_URL  + '/api/v1/form/send',
       data: formData,
     })
       .then((response) => {
