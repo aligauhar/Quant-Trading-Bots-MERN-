@@ -20,12 +20,11 @@ const FormFrontend = () => {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    axios({
-      method: 'post',
-      url: 'process.env.BACKEND_URL  + '/api/v1/form/send',
-      data: formData,
-    })
+      axios({
+        method: 'post',
+        url: process.env.BACKEND_URL + '/api/v1/form/send',
+        data: formData,
+      })
       .then((response) => {
         console.log(response.data);
         setSuccessMessage('Appointment Booked!');
