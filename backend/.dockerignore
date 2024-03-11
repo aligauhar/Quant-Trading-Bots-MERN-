@@ -1,0 +1,21 @@
+# Ignore node_modules in the main directory
+node_modules
+
+# Ignore build artifacts and logs
+build
+logs
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files
+config/sample_config.env
+
+# Ignore other temporary files
+*.log
+*.pid
+
+# Ignore Docker-related files
+.dockerignore
+Dockerfile
