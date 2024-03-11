@@ -23,7 +23,7 @@ const FormFrontend = () => {
   
     axios({
       method: 'post',
-      url: 'https://new-repo-278a.vercel.app/api/v1/form/send',
+      url: 'https://mern-templet-with-cd-vercel-hosting-with-github-actions.vercel.app/api/v1/form/send',
       data: formData,
     })
       .then((response) => {
