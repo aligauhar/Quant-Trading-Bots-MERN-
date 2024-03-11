@@ -9,8 +9,7 @@ logs
 .DS_Store
 Thumbs.db
 
-# Ignore environment files
-config/sample_config.env
+
 
 # Ignore other temporary files
 *.log
