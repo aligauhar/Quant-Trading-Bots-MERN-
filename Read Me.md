@@ -2,9 +2,9 @@
 1. clone repo from here or CI-Dockerization-With-GithubActions Repo
 2. cd to frontend run npm i
 3. cd to backend run npm i
-4. follow backend/config/config_sample.env
-5. follow frontend/config/config_sample.env
-6. npm run dev for fronend and backend
+4. add secrets to  backend/config/config_sample.env
+5. add secrets to frontend/config/config_sample.env or to the component/form.jsx 
+6. npm run dev for fronend and nodemon start for backend
 
 or 
 
@@ -13,10 +13,12 @@ or
 
 
 # When Deploying
-1. Set the vercel variables in secrets
-2. if cloned from here then just push again if not the follow the steps
-  1. Add verecl-hosting.yml file in your project
-  2. go through the vercel-changes file and implement the changes
+1. if cloned from here then just push again if not then follow the steps
+  1. Add verecel-hosting.yml file in your project
+  2. dont add config.json file in your gitignore rather chane he values to secretslike FRONTEND_URL = secrets.env.FRONTEND_URL
+  3. add the frontend link to the backend config file
+  4. add the backend link in component/form.jsx link (config file was not working else set there
+  5. add the secrets in the github and vercel setting
 
 # *****What will you get here?
 # Backend and Database
