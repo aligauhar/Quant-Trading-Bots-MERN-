@@ -1,16 +1,15 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-export const dbConnection = () => {
-  const dburl = "mongodb+srv://aligauhar:test123@cluster0.zugp10q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-  const dbname = "schema";
+const dburl = process.env.MONGO_URL;
+const dbname = process.env.MONGO_DB_NAME;
 
-  mongoose.connect(dburl, {
-    dbName: dbname,
+mongoose.connect(dburl, {
+  dbName: dbname,
+})
+  .then(() => {
+    console.log("Connected to database!");
   })
-    .then(() => {
-      console.log("Connected to the database!");
-    })
-    .catch((err) => {
-      console.log(`Some error occurred while connecting to the database: ${err}`);
-    });
-};
+  .catch((err) => {
+    console.log(`Some error occurred while connecting to the database: ${err}`);
+  });
