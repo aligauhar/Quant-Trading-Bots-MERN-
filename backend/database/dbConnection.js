@@ -5,7 +5,7 @@ const dburl = process.env.MONGODB_URI;
 const dbname = process.env.MONGO_DB_NAME;
 
 mongoose.connect(dburl, {
-  dbName: dbname,
+  dbName: "schema",
 })
   .then(() => {
     console.log("Connected to database!");
