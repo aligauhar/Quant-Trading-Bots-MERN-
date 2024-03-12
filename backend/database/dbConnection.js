@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 export const dbConnection = () => {
   const dburl = process.env.MONGODB_URI;
-  const dbname = "schema";
+  const dbname = process.env.MONGO_DB_NAME;
 
   mongoose.connect(dburl, {
     dbName: dbname,
