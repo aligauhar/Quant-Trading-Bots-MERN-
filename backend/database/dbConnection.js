@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-const dburl = process.env.MONGO_URL;
+const dburl = process.env.MONGODB_URI;
 const dbname = process.env.MONGO_DB_NAME;
 
 mongoose.connect(dburl, {
