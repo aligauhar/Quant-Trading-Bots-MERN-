@@ -1,6 +1,8 @@
 
 {
     "//" : "restApi.json",
+
+    "BACKEND_URL" : "https://mern-templet-with-cd-vercel-hosting-with-github-actions.vercel.app",
     "leftSideText": "Booking an appointment at Bahkhia Hospital is a seamless process designed to prioritize your convenience and well-being. Simply visit our website and navigate to the Appointments section. Here, you can choose your preferred date and time from the available slots. Provide essential details, including your personal information and any specific requirements or concerns you may have.Our user-friendly interface ensures a smooth booking experience, allowing you to confirm your appointment with just a few clicks. Feel free to explore additional features on our website, such as doctor profiles, services offered, and health resources. At Bahkhia Hospital, we are committed to delivering exceptional healthcare, and your booked appointment marks the first step towards your health and wellness journey. We look forward to serving you with compassion and expertise.",
     "imageSrc": "main.PNG",
     "leftSideHead":"Barkhia Hospital",

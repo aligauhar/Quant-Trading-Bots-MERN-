@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import dotenv from "dotenv";
-
-// dotenv.config({ path: "./config/config.env" });
+import data from "../../src/restApi.json"
+// dotenv.config({ path: "../../config/config.env" });
 const FormFrontend = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -22,7 +22,7 @@ const FormFrontend = () => {
     e.preventDefault();
       axios({
         method: 'post',
-        url: 'https://mern-templet-with-cd-vercel-hosting-with-github-actions.vercel.app//api/v1/form/send',
+        url: data.BACKEND_URL + '/api/v1/form/send',
         data: formData,
       })
       .then((response) => {
