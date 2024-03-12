@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-const dburl = "mongodb+srv://vercel-admin-user-65f051ae20853051a6ca2948:HLS3w2eRwGPCjoua@cluster0.zugp10q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const dbname = process.env.MONGO_DB_NAME;
+const dburl = mongodb+srv://aligauhar:test123@cluster0.zugp10q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0;
 
 mongoose.connect(dburl, {
   dbName: "schema",
