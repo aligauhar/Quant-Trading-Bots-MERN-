@@ -22,7 +22,7 @@ const FormFrontend = () => {
     e.preventDefault();
       axios({
         method: 'post',
-        url: process.env.BACKEND_URL + '/api/v1/form/send',
+        url: 'http://localhost:8000/api/v1/form/send',
         data: formData,
       })
       .then((response) => {
