@@ -10,7 +10,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: ['http://localhost:8080'],
+    origin: [process.env.FRONTEND_URL],
     methods: ["POST"],
     credentials: true,
   })
@@ -19,7 +19,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("api/v1/form", reservationRouter);
+app.use("/api/v1/form", reservationRouter);
 app.get("/", (req, res, next)=>{return res.status(200).json({
   success: true,
   message: "HELLO WORLD AGAIN"

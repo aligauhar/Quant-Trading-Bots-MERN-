@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 export const dbConnection = () => {
-  mongoose.connect("mongodb+srv://aligauhar:test123@cluster0.zugp10q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
-    dbName:"schema",
+  mongoose.connect(process.env.MONGO_URL, {
+    dbName:process.env.MONGO_DataBase_Name,
   })
   .then(() => {
       console.log("Connected to database!")
