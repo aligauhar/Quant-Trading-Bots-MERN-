@@ -9,10 +9,10 @@
 # When Deploying
 After complete development for pushing again
   1. Add Github/workflow/verecel-hosting.yml file in your project
-  2. dont add config.json file in your gitignore rather chane the values to secrets like FRONTEND_URL = secrets.env.FRONTEND_URL
-  3. get the frontend and backend deployment link to set in env
-  4. add the secrets in the github and vercel setting
-  5. instead of getting variable form config file directly secret variable is set in form (config file was not working else set there)
+  2. change the value of FRONTEND_URL of the deployed frontend url of vercel 
+  3. if you want to resrict the url for pirticular you can config in the cors present in backend/app.js
+  4. Install MongoDB and set the URL to your database from Atlas <span style="color:red;">(make sure to do it correctly; I wasted a day solving it as a bug)</span>
+  5. set the enviornment variable of the config file in vercel and github secrets as config file will not be dumped on repo
 
 # *****What will you get here?
 # Backend and Database
