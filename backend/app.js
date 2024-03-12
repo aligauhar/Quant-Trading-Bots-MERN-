@@ -8,8 +8,13 @@ import { dbConnection } from "./database/dbConnection.js";
 const app = express();
 dotenv.config({ path: "./config/config.env" });
 
-// Enable CORS for all routes
-app.use(cors());
+// Enable CORS middleware to allow all origins
+app.use(cors({
+  origin: '*',
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
+  optionsSuccessStatus: 204,
+}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
