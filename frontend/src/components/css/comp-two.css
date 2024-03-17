@@ -1,0 +1,22 @@
+
+.main-text{
+    text-align: center;
+}
+
+img{
+    height: 150px;
+    width:150px;
+}
+.steps{
+    background-color: #b71cf1;
+    margin: auto;
+    margin-top: 8px;
+    width :150px;
+    padding: 3px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.wrapper-2{
+    color: #cccccc;
+}
+

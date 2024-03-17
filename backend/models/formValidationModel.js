@@ -14,14 +14,6 @@ const FormSchema = new mongoose.Schema({
     minLength: [3, "Last name must be of at least 3 Characters."],
     maxLength: [30, "Last name cannot exceed 30 Characters."],
   },
-  date: {
-    type: String,
-    required: true,
-  },
-  time: {
-    type: String,
-    required: true,
-  },
   email: {
     type: String,
     required: true,
@@ -33,6 +25,11 @@ const FormSchema = new mongoose.Schema({
     minLength: [11, "Phone number must contain 11 Digits."],
     maxLength: [11, "Phone number must contain 11 Digits."],
   },
+  message: {
+    type: String,
+    required: true,
+    minLength: [2, "Message must be of at least 2 Characters."],
+  }
 });
 // form validation will be set as yo
 export const FormValidation = mongoose.model("FormValidation", FormSchema);
@@ -59,10 +56,9 @@ const saveFormData = async (formData) => {
 const formData = {
   firstName: 'Sample_firt_name',
   lastName: 'Sample_last_name',
-  date: '0000-00-00',
-  time: '00:00',
   email: 'sample.doe@example.com',
   phone: '00000000000',
+  message: 'Sample Message',
 };
 
 // Call the function to save data

@@ -3,13 +3,13 @@ import {FormValidation}  from "../models/formValidationModel.js";
 
 
 const send_FormValidation = async (req, res, next) => {
-  const { firstName, lastName, email, date, time, phone } = req.body;
-  if (!firstName || !lastName || !email || !date || !time || !phone) {
+  const { firstName, lastName, email, phone, message } = req.body;
+  if (!firstName || !lastName || !email || !phone || !message) {
     return next(new ErrorHandler("Please Fill Full Form!", 400));
   }
 
   try {
-    await FormValidation.create({ firstName, lastName, email, date, time, phone });
+    await FormValidation.create({ firstName, lastName, email, phone, message });
     res.status(201).json({
       success: true,
       message: "Form Sent Successfully!",

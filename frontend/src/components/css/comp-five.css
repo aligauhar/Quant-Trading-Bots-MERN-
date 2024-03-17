@@ -1,0 +1,18 @@
+.DefiQuant{
+    height: 100%;
+    width:100%;
+}
+.c5-header{
+    color:#00ffb2;
+    font-size: 35px;
+}
+.header-wrapper{
+    text-align: center;
+    margin-top: 30px;
+}
+.header-font{
+    font-size: 64px;
+}
+.col-md-7.text-wrapping {
+    padding: 65px;
+}

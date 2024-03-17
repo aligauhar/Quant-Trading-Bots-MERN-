@@ -1,0 +1,13 @@
+form.mb-6 {
+    width: 100%;
+}
+div#Form-sec {
+    margin-bottom: 20px;
+}
+button {
+    border: 2px solid;
+}
+
+.contact-img {
+    height: 560px;
+}

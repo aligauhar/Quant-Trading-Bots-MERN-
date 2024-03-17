@@ -1,0 +1,23 @@
+.footer.row {
+    padding: 30px;
+    background: rgba(17, 34, 60, 0.3);
+}
+.break-footer {
+    border-right: 1px solid #ccc; 
+    height: 100%; 
+    margin: 0 auto; 
+  }
+  img.contact-img {
+    border-radius: 50px;
+}
+.footer-link{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.footerlinks{
+  margin-top: 30px;
+}
+.footer.row {
+  margin: 0px;
+}

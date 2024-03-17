@@ -1,0 +1,114 @@
+.outer-card{
+    background-color: #13a87e;
+    rotate: -15deg;
+    border-radius: 25px;
+}
+.inner-card{
+    background-color: #281558;
+    rotate: 15deg;
+    padding: 10px;
+    border-radius: 25px;
+}
+.outer-card:hover{
+    background-color: #13a87e;
+    rotate: -5deg;
+    border-radius: 25px;
+}
+.inner-card:hover{
+    background-color: #281558;
+    rotate: 5deg;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.container.image-scroller-mobile-block {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 765px) {
+    h2.header-data.wrapper-2 {
+        font-size: 22px;
+        font-weight: 900;
+    }
+    nav.navbar-custom-wrapper.navbar.navbar-expand-lg.navbar-light h2 {
+        font-size: 36px;
+    }
+
+    img.d-inline-block.align-top.grayscale-image {
+        margin-left: 0px;
+        height: 43px;
+        width: 45px;
+    }
+    button.navbar-toggler {
+        width: 100px;
+        border: 2px solid #cccccc;
+        color: #cccccc;
+    }
+    button.connect-wallet-btn.btn.btn-light {
+        margin-right: 0px;
+    }
+    h2.header-data {
+        font-size: 23px;
+    }
+    p.typewriter {
+        font-size: 19px;
+    }
+    .col-md-7 {
+        margin-top: 50px;
+    }
+    .col-md-7 {
+        margin-top: 50px;
+    }
+    .container .col-md-7:nth-child(2),
+    .container .col-md-7:nth-child(3) {
+    display: none;
+}
+.image-scroller-mobile-none{
+    display:none;
+}
+
+.image-scroller-mobile-block{
+    display: block;
+}
+.col-md-4.main-text {
+    margin-bottom: 32px;
+}
+img.contact-img {
+    display: none;
+}
+div#Form-sec {
+    margin: 75px;
+}
+.footer.row {
+    text-align: center;
+}
+.inner-card {
+    margin-bottom: 20px;
+}
+.scrolling-images {
+    width: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+.image-scroller-mobile{
+    padding: 40px;
+}
+button.navbar-toggler.collapsed {
+    background: #cccccc;
+}
+nav.navbar-custom-wrapper.navbar.navbar-expand-lg.navbar-light h2 {
+    font-size: 30px;
+}
+img.d-inline-block.align-top.grayscale-image {
+    height: 36px;
+}
+button.navbar-toggler.collapsed {
+    width: 55px;
+    margin: 0px;
+}
+}
+

@@ -1,31 +1,47 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import data from "../restApi.json"
+import { FaLink } from 'react-icons/fa';
+import "./css/footer.css";
+import { Link } from 'react-router-dom'; 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-5 footer-margin">
-      <div className="container d-flex justify-content-between align-items-center">
-        <div className="banner">
-          <div className="text-right">
-            <p>Karachi</p>
-            <p>Open: 05:00 PM - 12:00 AM</p>
-          </div>
-        </div>
-        <div className="banner">
-          <div className="text-right">
-            <p>@ All right reserved By Ali. 2024</p>
-          </div>
-        </div>
-        <div className="banner text-left">
-          <div className="left">
-            <p>Developed By Ali</p>
-          </div>
-          <div className="right">
-            <p>Barkhia Hospital</p>
-          </div>
-        </div>
+    <div className="footer row">
+      <div className="col-md-1">
+
       </div>
-    </footer>
+      <div className="footer-left footer-row col-md-4 ">
+        <img src="main.png" alt="" />
+        <p>
+          {data.leftSideText}
+        </p>
+      </div>
+
+      <div className=" col-md-1">
+        <p className="break-footer" />
+
+      </div>
+
+      <div className="footer-right footer-row col-md-5">
+        <h2>
+          <FaLink /> Quick Navigation
+          
+        <div className="footerlinks">
+        <Link className="footer-link" to="/">Home</Link>
+        <Link className="footer-link" to="/about">About</Link>
+        </div>
+        </h2>
+      </div>
+      <div className="col-md-1">
+
+
+    </div>
+    </div >
   );
 };
 
 export default Footer;
+
+
+
+
+

@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrolling-images {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-images img {
+    width: 90%;
+    margin:20px;
+    margin-bottom:0px;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+.scrolling-images.anticlockwise img {
+    animation: scroll-anticlockwise 15s linear infinite;
+}
+
+@keyframes scroll-anticlockwise {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+img {
+    border-radius: 17px;
+}

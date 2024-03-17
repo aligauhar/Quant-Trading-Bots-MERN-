@@ -1,11 +1,33 @@
-
 {
-    "//" : "restApi.json",
-
-    "BACKEND_URL" : "https://mern-templet-with-cd-vercel-hosting-with-github-actions.vercel.app",
-    "leftSideText": "Booking an appointment at Bahkhia Hospital is a seamless process designed to prioritize your convenience and well-being. Simply visit our website and navigate to the Appointments section. Here, you can choose your preferred date and time from the available slots. Provide essential details, including your personal information and any specific requirements or concerns you may have.Our user-friendly interface ensures a smooth booking experience, allowing you to confirm your appointment with just a few clicks. Feel free to explore additional features on our website, such as doctor profiles, services offered, and health resources. At Bahkhia Hospital, we are committed to delivering exceptional healthcare, and your booked appointment marks the first step towards your health and wellness journey. We look forward to serving you with compassion and expertise.",
-    "imageSrc": "main.PNG",
-    "leftSideHead":"Barkhia Hospital",
-    "headText":"Barkhia Hospital"
-  }
+  "//": "restApi.json",
+  "BACKEND_URL": "https://quant-trading-bots-mern-bknd.vercel.app/",
+  "leftSideText": "Defi Quant empowers Trading Bots industry with AI technology for verifiable ownership of bots and assets and a fair trading ecosystem. Explore new possibilities by investing of the assets. Join the revolution today!",
+  "leftSideHead": "Become A part of Our Quantitative bot trading Revolution",
+  "c2head":"Embark on an Exciting Journey...",
+  "c2text":"Let's Begin Right Away by Following These Simple Steps!",
+  "c3head":"What's Revolutionizing About It?",
+  "c3text":"Why settle for a monopoly when you could join an automated revolution and earn instead?",
+  "makepossible": "What we make possible?",
+  "card1h3":"100% Automated",
+  "card1p":"No Interference in the bot once deployed",
+  "card2h3":"Your Selection",
+  "card2p":"Choose the Bot you like, view past statistics",
+  "card3h3":"Assets Diversification",
+  "card3p":"choose how much to invest in which one",
+  "step1Name":"Step 1",
+  "step1Heading":"Choose Bots",
+  "step1Body":"Select the bots you want to invest on",
+  "step2Name":"Step 2",
+  "step2Heading":"Input Data",
+  "step2Body":"Authorize and fill the Details",
+  "step3Name":"Step 3",
+  "step3Heading":"Payment",
+  "step3Body":"Do your Payment wiith crypto or bank",
+  "step4Name":"Step 4",
+  "step4Heading":"Wait for 12 hours",
+  "step4Body":"Monitor your trade after 12 hours",
+  "c5heading": "At Defi Quant",
+  "c5body": "Our vision is to revolutionize the trading landscape, providing users with unprecedented control over their strategies and assets. While our platform is not yet integrated with blockchain technology, our commitment to transparency and innovation remains unwavering. Defi Quant serves as a beacon of trust and reliability in the trading sphere, offering a seamless and efficient trading experience. We believe in fostering an inclusive trading environment where every trader, regardless of their background or expertise, can thrive. Our platform encourages experimentation and exploration, enabling users to optimize their trading strategies and maximize their returns. Our mission is clear: to bridge the gap between traditional trading and decentralized finance, unlocking new possibilities and opportunities for traders worldwide. Join us as we embark on this journey to redefine the future of trading and empower traders everywhere."
   
+  
+}

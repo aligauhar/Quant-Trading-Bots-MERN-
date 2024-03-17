@@ -1,0 +1,132 @@
+.navbar-custom-wrapper {
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+  .connect-wallet-btn:hover {
+    background-color: #fff;
+    color: black;
+  }
+  
+  .connect-wallet-btn:hover svg {
+    transform: rotate(45deg);
+    background-color: #cccccc;
+  }
+  nav.navbar-custom-wrapper.navbar.navbar-expand-lg.navbar-light {
+    position: sticky;
+    top: 0;
+}
+img.d-inline-block.align-top {
+    transition: all .2s linear;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    transform: translateY(0);
+    z-index: 10001;
+    border-radius: 50px;
+    margin-left: 30px;
+    
+}
+img.d-inline-block.align-top {
+    margin-left: 30px;
+}
+button.connect-wallet-btn.btn.btn-light {
+    margin-right: 30px;
+}
+.grayscale-image {
+    filter: grayscale(100%) !important;
+  }
+
+Nav.link{
+    font-size: 20px!important;
+    color: #cccccc;;
+}
+
+a.nav-link {
+    font-size: 24px;
+    color: #cccccc;
+    font-weight: 400;
+}
+.navbar-custom-wrapper h2{
+    display: inline;
+    vertical-align: bottom;
+    font-size: 50px;
+    color: #cccccc;
+}
+img.d-inline-block.align-top.grayscale-image {
+    margin-right: 7px;
+    color: #cccccc;
+}
+button.connect-wallet-btn.btn.btn-light {
+    width: 166px;
+    background: transparent;
+    border: 1px solid #cccccc;
+    border-radius: 24px;
+}
+a.nav-link {
+    text-align: right;
+}
+button.connect-wallet-btn.btn.btn-light {
+    margin-left: auto;
+    margin-right: 0px;
+}
+nav.navbar-custom-wrapper.navbar.navbar-expand-lg.navbar-light {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.mx-auto.navbar-nav a {
+    font-size: 15px;
+    padding: 5px;
+}
+
+    a.nav-link {
+        margin-right: -15px;
+        letter-spacing: 1.2em;
+    }
+
+@media (min-width: 990px) {
+    .navbar-nav > a:not(:first-child)::before {
+        content: "|";
+      }
+}
+
+button.navbar-toggler.collapsed {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+button.connect-wallet-btn.btn.btn-light {
+    margin-left: auto;
+    margin-right: 20px;
+}
+nav.navbar-custom-wrapper.navbar.navbar-expand-lg.navbar-light {
+    z-index: 100;
+}
+
+
+button.connect-wallet-btn.btn.btn-light:hover {
+    background: #cccccc;
+    color: black;
+}
+button.connect-wallet-btn.btn.btn-light {
+    color: #cccccc;
+}
+button {
+    width: 166px;
+    height: 47px;
+    color: #cccccc;
+    background: transparent;
+}
+button:hover {
+    width: 166px;
+    height: 47px;
+    color: black;
+    background: #cccccc;
+    svg.FaWallet path {
+        color: black;
+    }
+    .header-toggle-buttons button {
+        float: right;
+    }
+
+
+}
