@@ -13,6 +13,9 @@ dotenv.config({ path: "./config/config.env" });
 // Enable CORS middleware to allow all origins
 app.use(cors());
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.use("/api/v1/form", reservationRouter);
 app.use("/api/firebase-config", serviceRouter);
 app.use("/api/v1/popup", popupRouter);
