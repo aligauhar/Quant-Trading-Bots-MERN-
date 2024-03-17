@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 // Allowing API access for frontend URL only
 const restrictToAllowedOrigin = (req, res, next) => {
   const requestOrigin = req.headers.origin;
-  if (requestOrigin === 'https://quant-trading-bots-mern.vercel.app') {
+  if (requestOrigin === 'https://quant-trading-bots-mern.vercel.app/') {
     // If the request comes from the allowed origin, proceed
     next();
   } else {
@@ -29,7 +29,7 @@ const restrictToAllowedOrigin = (req, res, next) => {
 };
 
 // Apply the middleware for each route that needs to be restricted
-app.use("/api/v1/form", reservationRouter);
+app.use("/api/v1/form", restrictToAllowedOrigin, reservationRouter);
 
 app.use("/api/firebase-config", serviceRouter);
 app.use("/api/v1/popup", popupRouter);
