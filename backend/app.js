@@ -31,7 +31,7 @@ const restrictToAllowedOrigin = (req, res, next) => {
 // Apply the middleware for each route that needs to be restricted
 app.use("/api/v1/form", restrictToAllowedOrigin, reservationRouter);
 
-app.use("/api/firebase-config", serviceRouter);
+app.use("/api/firebase-config", restrictToAllowedOrigin, serviceRouter);
 app.use("/api/v1/popup", popupRouter);
 
 app.get("", (req, res, next) => {
