@@ -15,7 +15,7 @@ const NavbarComponent = () => {
     <Navbar collapseOnSelect expand="lg" className="navbar-custom-wrapper">
       <div>
         <img
-          src="main.png"
+          src="main.PNG"
           width="30"
           height="30"
           className="d-inline-block align-top grayscale-image"
