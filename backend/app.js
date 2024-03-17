@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 // Allowing API access for frontend URL only
 const restrictToAllowedOrigin = (req, res, next) => {
   const requestOrigin = req.headers.origin;
-  if (requestOrigin === 'https://quant-trading-bots-mern.vercel.app/api/v1/form') {
+  if (requestOrigin === 'https://quant-trading-bots-mern.vercel.app') {
     // If the request comes from the allowed origin, proceed
     next();
   } else {
