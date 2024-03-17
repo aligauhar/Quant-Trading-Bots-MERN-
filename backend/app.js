@@ -13,18 +13,7 @@ dotenv.config({ path: "./config/config.env" });
 // Enable CORS middleware to allow all origins
 app.use(cors());
 
-// const restrictToLocalhost = (req, res, next) => {
-//   const requestOrigin = req.headers.origin;
-//   if (requestOrigin === 'http://localhost' || requestOrigin === 'http://127.0.0.1') {
-  
-//     next();
-//   } else {
 
-//     res.status(403).json({ message: 'Forbidden' });
-//   }
-// };
-
-// put above in the middle for restriction
 app.use("/api/firebase-config",  serviceRouter);
 
 
